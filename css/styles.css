@@ -1,0 +1,77 @@
+:root {
+--link-color: #fff;
+--text-font-family:"Roboto", sans-serif;
+--logo-font-family:"Raleway",sans-serif;
+}
+*{font-family: var(--font-family)}
+.global-header {
+    background-color: #ffffff;
+}
+.global-header .main-nav a{
+    color:#2E2F42
+}
+ul {
+     list-style-type: none;
+}
+.global-header a {
+    text-decoration: none;
+}
+.section-hero { 
+    background-color:#2E2F42;
+    color: white;
+}
+.hero-title:hover {
+    text-decoration: underline;
+    }
+.button-service {
+    background-color: #4D5AE5;
+    color: #FFFFFF;
+    font-size: 16px;
+    line-height:24px;
+    padding:16px; 
+} 
+.logo::before{
+    content: "WEB";
+    color: blue
+}
+.logo::after{
+    content: "STUDIO";
+    color:black  
+}
+.e-mail {
+    color: #434455
+}
+.phone {
+    color: #434455
+}
+.section1 h3{
+    color:#2E2F42
+}
+.section1 p{
+    color: #434455
+} 
+.section2 h2{
+    color:#2E2F42
+}
+.section3 h2{
+    color: #2E2F42
+}
+.section3 h3{
+    color: #2E2F42
+}
+.section3 span{
+    color: #434455
+}
+.global-footer{
+    background-color: #2E2F42;
+        color: white;
+}
+.logo1::before {
+    content: "WEB";
+    color: blue
+}
+
+.logo1::after {
+    content: "STUDIO";
+    color: rgb(255, 255, 255)
+}
