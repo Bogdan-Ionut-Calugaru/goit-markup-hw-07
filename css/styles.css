@@ -1,4 +1,4 @@
-:root {
+body {
 --link-color: #fff;
 --text-font-family:"Roboto", sans-serif;
 --logo-font-family:"Raleway", sans-serif;
@@ -24,13 +24,20 @@ ul {
     color: #2E2F42;
     font-weight: 500;
     font-size: 16px;
-    line-height: 24px;
+    line-height: 1.5;
 }
+.global-header .menu-nav a:hover {
+    color: #9747FF;
+    text-decoration:underline;
+}
+
 .contacts a {
     color:#434455;
-    font-weight: 400;
     font-size: 16px;
-    line-height: 24px;
+    line-height: 1.5;
+}
+.contacts a.mail:hover {
+    color: #404BBF;
 }
 a {
     text-decoration: none;
@@ -45,56 +52,57 @@ a {
 .button-services {
     background-color: #4D5AE5;
     color: #FFFFFF;
-    font-weight:500;
-    line-height:24px;
+    font-weight: 500;
     font-size: 16px;
-    line-height:24px;
+    line-height: 1.5;
     padding: 10px;
 } 
+.button-services:hover,
+.button-services:focus{
+background-color: #404BBF;
+}
 .section1 h3{
     color:#2E2F42;
     font-weight: 500;
     font-size: 20px;
-    line-height: 24px;
+    line-height: 1.2;
 }
 .section1 p{
     color: #434455;
     font-weight: 400;
      font-size: 16px;
-     line-height: 24px;
+     line-height: 1.5;
 } 
 .section2 h2{
     color:#2E2F42;
     font-weight: 700;
      font-size: 36px;
-     line-height: 40px;
+     line-height: 1.1;
      
 }
 .section3 h2{
     color: #2E2F42;
     font-weight: 700;
     font-size: 36px;
-    line-height: 40px;
+    line-height: 1.1;
 }
 .section3 h3{
     color: #2E2F42;
     font-weight: 500;
     font-size: 20px;
-    line-height: 24px;
+    line-height: 1.2;
 }
 .section3 span{
     color: #434455;
-    font-weight: 400;
     font-size: 16px;
-    line-height: 24px;
+    line-height: 1.5;
 
 }
 .global-footer{
     background-color: #2E2F42;
-        color: white;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 24px;
+    color: #fff;
+    font-size: 16px;
+    line-height: 1.5;
 }
 .logo1::before {
     content: "WEB";
@@ -105,31 +113,32 @@ a {
     color: #f4f4fd
 }
 .filters button{
-    background-color: #E7E9FC;
+    background-color: #f4f4fd;
+        border-color:#E7E9FC;
+        border-radius: 2px;
+        border-width: 1px;
     color: #4D5AE5;
     font-weight: 500;
-    line-height: 24px;
+    line-height: 1.5;
     font-size: 16px;
-    line-height: 24px;
 }
-.filters button:hover {
+.filters button:hover,
+.filters button:focus {
     background-color: #404BBF;;
     color: #fff;
     font-weight: 500;
-    line-height: 24px;
+    line-height: 1.5;
     font-size: 16px;
-    line-height: 24px;
     cursor: pointer;
 }
 .section-row h3 {
     color: #2E2F42;
      font-weight: 500;
      font-size: 20px;
-     line-height: 24px;
+     line-height: 1.2;
 }
 .section-row p {
     color: #434455;
-    font-weight: 400;
     font-size: 16px;
-    line-height: 24px;
+    line-height: 1.2;
 }
