@@ -1,77 +1,135 @@
 :root {
 --link-color: #fff;
 --text-font-family:"Roboto", sans-serif;
---logo-font-family:"Raleway",sans-serif;
+--logo-font-family:"Raleway", sans-serif;
 }
-*{font-family: var(--font-family)}
+*{
+    font-family: var(--text-font-family)
+}
 .global-header {
     background-color: #ffffff;
 }
-.global-header .main-nav a{
-    color:#2E2F42
-}
 ul {
-     list-style-type: none;
+    list-style-type: none;  
 }
-.global-header a {
+.logo::before {
+    content: "WEB";
+    color: #4D5AE5;
+}
+.logo {
+    font-family: var(--logo-font-family);
+    color: #2E2F42
+}
+.global-header .menu-nav a{
+    color: #2E2F42;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+}
+.contacts a {
+    color:#434455;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+a {
     text-decoration: none;
 }
 .section-hero { 
     background-color:#2E2F42;
-    color: white;
+    color: rgb(255, 255, 255);
 }
 .hero-title:hover {
     text-decoration: underline;
     }
-.button-service {
+.button-services {
     background-color: #4D5AE5;
     color: #FFFFFF;
+    font-weight:500;
+    line-height:24px;
     font-size: 16px;
     line-height:24px;
-    padding:16px; 
+    padding: 10px;
 } 
-.logo::before{
-    content: "WEB";
-    color: blue
-}
-.logo::after{
-    content: "STUDIO";
-    color:black  
-}
-.e-mail {
-    color: #434455
-}
-.phone {
-    color: #434455
-}
 .section1 h3{
-    color:#2E2F42
+    color:#2E2F42;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
 }
 .section1 p{
-    color: #434455
+    color: #434455;
+    font-weight: 400;
+     font-size: 16px;
+     line-height: 24px;
 } 
 .section2 h2{
-    color:#2E2F42
+    color:#2E2F42;
+    font-weight: 700;
+     font-size: 36px;
+     line-height: 40px;
+     
 }
 .section3 h2{
-    color: #2E2F42
+    color: #2E2F42;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 40px;
 }
 .section3 h3{
-    color: #2E2F42
+    color: #2E2F42;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
 }
 .section3 span{
-    color: #434455
+    color: #434455;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+
 }
 .global-footer{
     background-color: #2E2F42;
         color: white;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
 }
 .logo1::before {
     content: "WEB";
-    color: blue
+    color: #4D5AE5;
 }
-
-.logo1::after {
-    content: "STUDIO";
-    color: rgb(255, 255, 255)
+.logo1 {
+    font-family: var(--logo-font-family);
+    color: #f4f4fd
+}
+.filters button{
+    background-color: #E7E9FC;
+    color: #4D5AE5;
+    font-weight: 500;
+    line-height: 24px;
+    font-size: 16px;
+    line-height: 24px;
+}
+.filters button:hover {
+    background-color: #404BBF;;
+    color: #fff;
+    font-weight: 500;
+    line-height: 24px;
+    font-size: 16px;
+    line-height: 24px;
+    cursor: pointer;
+}
+.section-row h3 {
+    color: #2E2F42;
+     font-weight: 500;
+     font-size: 20px;
+     line-height: 24px;
+}
+.section-row p {
+    color: #434455;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
 }
