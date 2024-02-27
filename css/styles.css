@@ -229,7 +229,7 @@ background-color: #404BBF;
 .container{
     max-width: 1200px;
 }
-.global-header, .section-hero, .section1, .section2, .section3{
+.global-header, .section-hero, .section1, .section2, .section3, .filters, .section-row{
     display: flex;
     justify-content: center;
 }
