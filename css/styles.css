@@ -6,8 +6,21 @@ body {
 *{
     font-family: var(--text-font-family)
 }
+* {
+    box-sizing: border-box;
+}
 .global-header {
     background-color: #ffffff;
+}
+.container-header{
+    width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.links{display: flex;
+    justify-content: space-evenly;
+    width: 500px;
 }
 ul {
     list-style-type: none;  
@@ -22,10 +35,18 @@ width: 1200px;
 .logo::before {
     content: "WEB";
     color: #4D5AE5;
-}
-.logo {
     font-family: var(--logo-font-family);
-    color: #2E2F42
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.2;
+}
+.header-logo {
+    font-family: var(--logo-font-family);
+    color: #2E2F42;
+    font-weight: 800;
+     font-size: 18px;
+    line-height: 1.2;
+     text-transform: uppercase;
 }
 .global-header .menu-nav a{
     color: #2E2F42;
@@ -37,7 +58,11 @@ width: 1200px;
     color: #9747FF;
     text-decoration:underline;
 }
-
+.contacts{
+    display: flex;
+    justify-content: space-evenly;
+    width: 500px;
+    }
 .contacts a {
     color:#434455;
     font-size: 16px;
@@ -143,12 +168,16 @@ background-color: #404BBF;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
+    text-align: center;
 }
-.section3 span{
+.section3 p{
     color: #434455;
     font-size: 16px;
     line-height: 1.5;
-
+    text-align: center;
+}
+.cards{
+    background-color: #fff;
 }
 .global-footer{
     background-color: #2E2F42;
@@ -157,22 +186,32 @@ background-color: #404BBF;
     height: 300px;
     padding-left: 100px;
     align-items: center;
+    margin-top: 100px;
 }
-.logo1::before {
-    content: "WEB";
-    color: #4D5AE5;
+.container-footer{
+    width: 1200px;
+}
+.global-footer-logo::after {
+    content: "STUDIO";
+    color: #fff;
+    font-family: "Raleway", sans-serif;
     font-weight: 800;
     font-size: 18px;
     line-height: 1.2;
 }
-.logo1 {
+.footer-logo {
     font-family: var(--logo-font-family);
-    color: #f4f4fd;
     font-weight: 800;
     font-size: 18px;
     line-height: 1.2;
     text-transform: uppercase;
+    color: #fff;
 }
+.description{
+    font-size: 16px;
+    line-height: 1.5;
+    color: #fff;
+    }
 .buttons {
     display: flex;
     justify-content: center;
