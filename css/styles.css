@@ -9,11 +9,16 @@ body {
 *{
     font-family: var(--text-font-family)
 }
-* {
+*,
+*::before,
+*::after {
     box-sizing: border-box;
 }
 .global-header {
     background-color: #ffffff;
+    border-bottom: 1px solid #E7E9FC;
+    height: 72px;
+    box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 2px 1px 0 rgba(46, 47, 66, 0.08);
 }
 .header-container{
     display: flex;
@@ -28,7 +33,8 @@ ul {
     list-style-type: none;  
 }
 .container {
-width: 1200px;
+max-width: 1200px;
+margin: 0 auto;
 }
 .section {
     display: flex;
@@ -70,29 +76,30 @@ width: 1200px;
     font-size: 16px;
     line-height: 1.5;
 }
-.contacts a.mail:hover {
-    color: #404BBF;
-}
+.contacts a:hover{
+ color: #404BBF}
 a {
     text-decoration: none;
 }
 .section-hero { 
-    background-color:var(--background-color);
+    background-color:var(--background-color) ;
     color: rgb(255, 255, 255);
     display: flex;
     justify-content: center;
      text-align: center;
     align-items: center;
      height: 500px;
+    background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+            url("../images/people-office.png");
+        height: 600px;
+        background-repeat: no-repeat;
+        background-size: cover;
 }
 .hero-title{
     font-weight: 700;
      font-size: 56px;
     line-height: 1.1;
 }
-.hero-title:hover {
-    text-decoration: underline;
-    }
 .button-services {
     background-color: #4D5AE5;
     color: #FFFFFF;
@@ -115,11 +122,24 @@ background-color: #404BBF;
     gap: 24px;
     padding: 100px 70px;
 }
+.icon{
+    width: 64px;
+    height: 64px;
+}
+.feature-icon {
+    width: 264px;
+    height: 112px;
+    background: #F4F4FD;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .section1 h3{
     color:var(--title-color);
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
+    display: flex;
 }
 .section1 p{
     color:var(--content-color);
@@ -149,7 +169,7 @@ background-color: #404BBF;
     display: flex;
     background-color:#f4f4fd;
     justify-content: center;
-     margin-top: 100px
+     margin-top: 100px;
 }
 .our-team{
     display: flex;
@@ -178,8 +198,93 @@ background-color: #404BBF;
     line-height: 1.5;
     text-align: center;
 }
+.section4 h2 {
+    color: var(--title-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.1;
+    text-align: center;
+    padding: 60px 35px;
+}
 .cards{
-    background-color: #fff;
+    background-color: #fff; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 32px;
+}
+.social-icon {
+    color:#8E8F99;
+}
+
+
+.social-links-list {
+    display: flex;
+    justify-content:space-between;
+    gap: 24px;
+}
+
+.social-icon svg {
+    width: 16px;
+    height: 16px;
+}
+.social-icon {
+    width: 40px;
+    height: 40px;
+    background: #4d5ae5;
+    fill: var(--link-color);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-icon:hover,
+.social-icon:active {
+    background: #404BBF;
+    border-radius: 50%;
+    fill: var(--link-color)
+}
+.section-style{
+    align-items: center;
+}
+.section-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    margin-bottom: 120px;
+}
+.icon-client-background {
+    width: 168px;
+    height: 88px;
+    background: #fff;
+    border: 1px solid #8E8F99;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-client-background:hover {
+    border: 1px solid #4d5ae5;
+    border-radius: 4px;
+}
+.icon-client {
+    width: 104px;
+    height: 56px;
+}
+.icon-client :hover,
+.icon-client :focus {
+    fill:#4d5ae5;
 }
 .global-footer{
     background-color:var(--background-color);
@@ -191,6 +296,9 @@ background-color: #404BBF;
 }
 .container-footer{
     width: 1200px;
+    margin:0 auto;
+    display:flex;
+    gap:120px;
 }
 .global-footer-logo::after{
     content: "STUDIO";
@@ -208,11 +316,61 @@ background-color: #404BBF;
     text-transform: uppercase;
     color: #fff;
 }
+.footer-logo-description {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 264px;}
 .description{
     font-size: 16px;
     line-height: 1.5;
     color: #fff;
     }
+.footer-social-links {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+.footer-social-links p {
+    margin: top 100px;
+}
+.footer-social-links-list {
+    display: flex;
+    justify-content: space-between;
+    width: 208px;
+    gap:16px;
+}
+.footer-icon svg {
+    width: 24px;
+    height: 24px;
+    color: #8e8f99;
+}
+
+.footer-icon svg:hover,
+.footer-icon svg:active {
+    fill: #fff;
+}
+
+.footer-icon {
+    width: 40px;
+    height: 40px;
+    background: #4d5ae5;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    fill: var(--link-color);
+}
+
+.footer-icon:hover,
+.footer-icon:active {
+    background: #31D0AA;
+    border-radius: 50%;
+    fill: #F4F4FD;
+}
 .buttons {
     display: flex;
     justify-content: center;
@@ -240,12 +398,19 @@ background-color: #404BBF;
     font-weight: 500;
     line-height: 1.5;
     font-size: 16px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    scale: 1.015;
     cursor: pointer;
 }
 .project-card-items{
     display: flex;
     gap: 24px;
     margin-bottom: 20px;
+}
+.project-card-items li:hover{
+box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25); 
+ scale: 1.015;
+ cursor:pointer;
 }
 .section-row li{
     width: 360px;
@@ -266,10 +431,7 @@ background-color: #404BBF;
     line-height: 1.2;
     padding-left: 16px;
 }
-.container{
-    max-width: 1200px;
-}
-.global-header, .section-hero, .section1, .section2, .section3, .filters, .section-row{
+.global-header, .section-hero, .section1, .section2,   .section4 .filters, .section-row{
     display: flex;
     justify-content: center;
 }
