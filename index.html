@@ -23,7 +23,7 @@
             <nav class=" menu-nav">
                 <ul class="links">
                     <li>
-                        <a href="studio.html">Studio</a>
+                        <a class="active" href="studio.html">Studio</a>
                     </li>
                     <li>
                         <a href="portofolio.html">Portofolio</a>
@@ -44,12 +44,18 @@
         </div>
 
     </header>
+    <div class="modal is-hidden" data-modal>
+        <div class="modal-content">
+            <button class="close-btn" data-modal-close>&times;</button>
+            Continut modal
+        </div>
+    </div>
     <main>
         <!--Section Hero-->
-        <section class="section-hero">
+        <section class=" section-hero">
             <div class="container">
                 <h1 class="hero-title">Effective Solutions <br> for Your Business</h1>
-                <button type="button" class="button-services">Order Service</button>
+                <button type="button" class="button-services" data-modal-open>Order Service</button>
             </div>
 
         </section>
@@ -88,7 +94,8 @@
                             </svg>
                         </div>
                         <h3>Diligence</h3>
-                        <p>Research and confirm brands that present the strongest digital growth opportunities and
+                        <p>Research and confirm brands that present the strongest digital growth opportunities
+                            and
                             minimize
                             risk.
                         </p>
@@ -312,7 +319,8 @@
         <div class="container-footer">
             <div class="footer-logo-description"><a href="index.html" class="logo">
                     <span class="footer-logo">STUDIO</span></a>
-                <p class="description">Increase the flow of customers and <br> sales for your business with digital <br>
+                <p class="description">Increase the flow of customers and <br> sales for your business with
+                    digital <br>
                     marketing
                     &
                     growth
@@ -347,6 +355,7 @@
             </div>
         </div>
     </footer>
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>
