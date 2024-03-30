@@ -320,7 +320,7 @@ background-color: #404BBF;
     width: 1200px;
     margin:0 auto;
     display:flex;
-    gap:120px;
+    gap:60px;
 }
 .global-footer-logo::after{
     content: "STUDIO";
@@ -393,6 +393,86 @@ background-color: #404BBF;
     border-radius: 50%;
     fill: #F4F4FD;
     transition: var(--transition)
+}
+.email-input-container {
+    margin-top: 20px;
+    margin-left: 80px;
+}
+
+.subscribe {
+    color: #fff;
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+}
+
+.email-box {
+    display: flex;
+    align-items: center;
+}
+
+.input-subscribe::placeholder {
+    font-size: 12px;
+    letter-spacing: 0.04em;
+    color: #fff;
+    opacity: 1;
+}
+
+.email-input-container input {
+    background: #2e2f42;
+    border: none;
+    width: 243px;
+    color: #fff;
+    border-radius: 4px;
+    width: 264px;
+    height: 40px;
+    border: 1px solid white;
+    margin: 16px 24px 0px 0px;
+    padding-left: 16px;
+}
+
+.email-input-container button {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    width: 165px;
+    height: 40px;
+    padding: 8px 24px 8px 24px;
+    cursor: pointer;
+    background: #4d5ae5;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 0.04em;
+    text-transform: capitalize;
+    gap: 16px;
+    margin-top: 16px;
+}
+
+.email-input-container input:focus {
+    outline: none;
+    border: 1px solid#4d5ae5;
+    transition: var(--transition);
+}
+
+.email-input-container button:hover {
+    background-color: #404bbf;
+    transition: var(--transition);
+}
+
+.email-input-container button:active {
+    background-color: #4d5ae5;
+}
+
+.send {
+    width: 24px;
+    height: 24px;
+    fill: #fff;
 }
 .buttons {
     display: flex;
@@ -474,7 +554,7 @@ box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
     height: 100%;
     background-color: #4d5ae5;
     transform: translatey(100%);
-    transition: transform var(--transition);
+    transition: var(--transition);
 }
 .portofolio-cards:hover .overlay{
     transform: translatey(0);
@@ -513,7 +593,7 @@ box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
     height: 584px;
     position: relative;
 }
-.close-btn  {
+.close-btn{
     background-color: #E7E9FC;
     border-radius: 50%;
     border-style: none;
@@ -528,9 +608,113 @@ box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
     display: flex;
     justify-content: center;
     align-items: center;
-
+}
+.close-btn:hover{
+    transform: scale(1.05);
+    transition: var(--transition);
+    cursor: pointer;
+}
+label {
+    font-family: var(--text-font-family);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color:#8E8F99;
+}
+.title-form {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: var(--title-color) ;
+    padding: 50px 14px 10px 14px;
+}
+.form-group {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    width: 360px;
+    height: 58px;
+    margin-bottom: 8px;
+    gap: 3px;
+}
+.form-group:focus-within svg {
+    fill: #4D5AE5;
+    outline: none;
+}
+.input-for-icon {
+    padding: 8px 16px;
+    border: 1px solid #2e2f4266 ;
+    border-radius: 4px;
+}
+.input-for-icon:focus {
+    outline: 1px solid #4D5AE5;
+    border: none;
+}
+.input-icon:focus {
+    color: #4D5AE5;
+}
+.input-icon {
+    padding: 3px 0px;
+    width: 18px;
+    height: 24px;
+    position: absolute;
+    top: 26px;
+    left: 16px;
+    pointer-events: none;
+}
+.input-comment {
+    border: 1px solid #2e2f4266;
+    border-radius: 4px;
+    width: 360px;
+    height: 120px;
+    resize: none;
+}
+.input-comment:focus {
+    outline: 1px solid #4D5AE5;
+    border: none;
+}.input-comment::placeholder {
+    text-align: initial;
+}
+ .check-text {
+     display: flex;
+     align-items: center;
+     margin-top: 40px;
+ }
+ .check-text label {
+     color: #2e2f4266;
+     font-weight: 400;
+     font-size: 12px;
+     line-height: 117%;
+     letter-spacing: 0.04em;
+     margin-left: 8px;
+ }
+ .check-text a {
+     color: #4d5ae5;
+     text-decoration: underline;
+     cursor: pointer;
+ }
+.btn-send-form {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
 }
 
+.btn-send {
+    border-radius: 4px;
+    padding: 16px 32px;
+    width: 169px;
+    height: 56px;
+    background-color: #4D5AE5;
+    color: #fff;
+    border: none;
+}
 
-
-
+.btn-send:hover {
+    transform: var(--transition);
+    transform: scale(1.05);
+    cursor: pointer;
+    transition: var(--transition);
+}
